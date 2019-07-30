@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,300&display=swap');
+@import 'variables.scss';
+@import 'footer.scss';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;   
+}
+
+
+.accent{
+  color:$verdigris;
+}
+
+.wrapper{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: 
+    "header"
+    "content"
+    "footer"
+    ;
+}
+header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  grid-area: header;
+  border-bottom: .1em solid $pastelviolet;
+  box-shadow: 0 0 0 .1em rgba(0, 0, 0, 0.2);
+} 
+
+
+header {
+  a:visited{
+      color: $verdigris;
+    }
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+}
+ul {
+  display: flex;
+}
+.horizontal-nav li{
+  list-style: none;
+  padding: 1em;
+    a {
+    display: inline-block;
+    text-decoration: none;
+    color: $verdigris;
+    transition: all .2s ease-in-out;
+   
+     &:hover {
+      border-bottom: 1px solid $darkpink;
+      transform: scale(1.1);
+       
+      }
+    &:visited{
+      color: $verdigris;
+    }
+    &:active {
+      color:$darkpink;
+    }
+  }
+
+  }
+
+
+.heading {
+  font-family: $copytext;
+  font-size: 2em;
+  font-weight: 100;
+  
+}
+#name {
+  font-size: 2em;
+  padding: 1em;
+  color: $richlilac;
+}
+
+
+p{
+  color: $darkgrey;
+  margin: 1em;
+  font-family: $copytext;
+  font-size: 2em;
+  font-weight: 100;
+}
+
+/* Landing page */
+#landing{
+  background-color: #fff;;
+  color: $maximumblue;
+  display:flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h1{
+    color: $richlilac;
+    font-family: $headertext;
+    font-size: 6.7em;
+    font-weight: 100;
+    
+  }
+  p{
+   font-size: 2.4em;
+    color:$darkgrey;
+  }
+  .cta{
+    a{
+    
+    border: 1px solid $pastelviolet;
+    border-radius: 8px;
+    display: inline-block;
+    font-family: $copytext;
+    margin-bottom: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1em 1.5em;
+    }
+  }
+}
+
+
+/*Media Queries*/
+
+@media (max-width: 500px){
+  .navmenu {
+    display: none;
+  }
+  #landing{
+    h1{
+      font-size: 3em;
+    }
+    p{
+      font-size: 1.4em;
+    }
+  }
+
+}
+

@@ -1,0 +1,14 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "2019 portfilio V1",
+  "main": "index.html",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Erika",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
