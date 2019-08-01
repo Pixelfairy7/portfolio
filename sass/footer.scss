@@ -1,21 +1,22 @@
 @import 'variables.scss';
 /*Footer*/
 footer{
-    position: sticky;
-    bottom: 0;
-    background: #fff;
-    border-top: .1em solid $richlilac;
-    width: 100%;
-    p{
-      text-align: center;
-    }
+  position: sticky;
+  bottom: 0;
+  background: #fff;
+  border-top: .1em solid $richlilac;
+  width: 100%;
+  
+}
+
+.sm-icons {
+    justify-content: center;
+  i{
+    color: $verdigris;
+    font-size: 2em;
   }
-  .sm-icons {
-      justify-content: center;
-    i{
-      color: $richlilac;
-      font-size: 2em;
-    }
-    
-  }
+  
+}
+ 
+ 
   

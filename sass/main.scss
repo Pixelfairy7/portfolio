@@ -8,6 +8,34 @@
     padding: 0;   
 }
 
+p{
+    color: $darkgrey;
+    margin: 1em;
+    font-family: $copytext;
+    font-size: 2.4em;
+    font-weight: 100;
+    text-align: center;
+    
+
+  }
+
+  h1{
+    color: $richlilac;
+    font-family: $headertext;
+    font-size: 6.7em;
+    font-weight: 100;
+    align-items: center;
+
+  }
+  h2{
+    color: $richlilac;
+    font-family: $headertext;
+    font-size: 3.3em;
+    font-weight: 100;
+    align-items: center;  
+  }
+
+
 
 .accent{
   color:$verdigris;
@@ -57,7 +85,7 @@ ul {
     transition: all .2s ease-in-out;
    
      &:hover {
-      border-bottom: 1px solid $darkpink;
+      color: $darkpink;
       transform: scale(1.1);
        
       }
@@ -85,16 +113,10 @@ ul {
 }
 
 
-p{
-  color: $darkgrey;
-  margin: 1em;
-  font-family: $copytext;
-  font-size: 2em;
-  font-weight: 100;
-}
 
-/* Landing page */
-#landing{
+
+/* sections*/
+.page-section{
   background-color: #fff;;
   color: $maximumblue;
   display:flex;
@@ -102,47 +124,31 @@ p{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  h1{
-    color: $richlilac;
-    font-family: $headertext;
-    font-size: 6.7em;
-    font-weight: 100;
-    
-  }
-  p{
-   font-size: 2.4em;
-    color:$darkgrey;
-  }
-  .cta{
-    a{
-    
-    border: 1px solid $pastelviolet;
-    border-radius: 8px;
-    display: inline-block;
-    font-family: $copytext;
-    margin-bottom: 1em;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 1em 1.5em;
+    h2{
+      color: $darkpink;
     }
-  }
 }
 
 
 /*Media Queries*/
 
-@media (max-width: 500px){
+@media (max-width: 600px){
   .navmenu {
     display: none;
   }
-  #landing{
-    h1{
-      font-size: 3em;
+  h1{
+    font-size: 3em;
     }
-    p{
-      font-size: 1.4em;
+  h2{
+      font-size: 2.5em;
     }
-  }
+  p{
+      font-size: 2em;
+    }
+    .page-section{
+      height: 100vh;
+    }
+
 
 }
 
