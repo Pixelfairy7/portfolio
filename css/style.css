@@ -8,19 +8,39 @@ footer {
   background: #fff;
   border-top: 0.1em solid #B042BD;
   width: 100%; }
-  footer p {
-    text-align: center; }
 
 .sm-icons {
   justify-content: center; }
   .sm-icons i {
-    color: #B042BD;
+    color: #307F88;
     font-size: 2em; }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
+
+p {
+  color: #4c4c4c;
+  margin: 1em;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.4em;
+  font-weight: 100;
+  text-align: center; }
+
+h1 {
+  color: #B042BD;
+  font-family: "Raleway", sans-serif;
+  font-size: 6.7em;
+  font-weight: 100;
+  align-items: center; }
+
+h2 {
+  color: #B042BD;
+  font-family: "Raleway", sans-serif;
+  font-size: 3.3em;
+  font-weight: 100;
+  align-items: center; }
 
 .accent {
   color: #307F88; }
@@ -58,7 +78,7 @@ ul {
     color: #307F88;
     transition: all .2s ease-in-out; }
     .horizontal-nav li a:hover {
-      border-bottom: 1px solid #EB4E83;
+      color: #EB4E83;
       transform: scale(1.1); }
     .horizontal-nav li a:visited {
       color: #307F88; }
@@ -75,15 +95,8 @@ ul {
   padding: 1em;
   color: #B042BD; }
 
-p {
-  color: #4c4c4c;
-  margin: 1em;
-  font-family: "Raleway", sans-serif;
-  font-size: 2em;
-  font-weight: 100; }
-
-/* Landing page */
-#landing {
+/* sections*/
+.page-section {
   background-color: #fff;
   color: #247BA3;
   display: flex;
@@ -91,29 +104,18 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center; }
-  #landing h1 {
-    color: #B042BD;
-    font-family: "Raleway", sans-serif;
-    font-size: 6.7em;
-    font-weight: 100; }
-  #landing p {
-    font-size: 2.4em;
-    color: #4c4c4c; }
-  #landing .cta a {
-    border: 1px solid #CC93C3;
-    border-radius: 8px;
-    display: inline-block;
-    font-family: "Raleway", sans-serif;
-    margin-bottom: 1em;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 1em 1.5em; }
+  .page-section h2 {
+    color: #EB4E83; }
 
 /*Media Queries*/
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .navmenu {
     display: none; }
-  #landing h1 {
+  h1 {
     font-size: 3em; }
-  #landing p {
-    font-size: 1.4em; } }
+  h2 {
+    font-size: 2.5em; }
+  p {
+    font-size: 2em; }
+  .page-section {
+    height: 100vh; } }
