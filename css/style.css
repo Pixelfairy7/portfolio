@@ -112,10 +112,10 @@ ul {
   .navmenu {
     display: none; }
   h1 {
-    font-size: 3em; }
-  h2 {
     font-size: 2.5em; }
-  p {
+  h2 {
     font-size: 2em; }
+  p {
+    font-size: 1.5em; }
   .page-section {
     height: 100vh; } }
