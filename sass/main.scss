@@ -51,6 +51,7 @@ p{
     "footer"
     ;
 }
+
 header {
   position: sticky;
   top: 0;
@@ -71,6 +72,17 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+
+  #hamburger-menu{
+
+    i{
+      color: $darkpink;
+      font-size: 2em;
+     margin-top: 1em;
+     margin-left: 1em;
+    
+    }
+  }
   
 }
 ul {
@@ -111,6 +123,7 @@ ul {
   font-size: 2em;
   padding: 1em;
   color: $richlilac;
+  margin: auto;
 }
 
 
@@ -129,6 +142,7 @@ ul {
       color: $darkpink;
     }
 }
+
 
 
 /*Media Queries*/
@@ -151,11 +165,21 @@ ul {
     .page-section{
       height: 100vh;
     }
+ 
 
  #skills-list{
    font-size: 2.1em;
    
  }
+}
 
+
+
+@media only screen and (min-width: 700px){
+  #hamburger-menu{
+    i{
+      display: none;
+    }
+  }
 }
 
