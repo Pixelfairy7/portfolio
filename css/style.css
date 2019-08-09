@@ -15,7 +15,7 @@ footer {
     color: #307F88;
     font-size: 2em; }
 
-a:hover {
+.fab:hover {
   color: #EB4E83;
   transform: scale(1.1); }
 
@@ -79,6 +79,11 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around; }
+  nav #hamburger-menu i {
+    color: #EB4E83;
+    font-size: 2em;
+    margin-top: 1em;
+    margin-left: 1em; }
 
 ul {
   display: flex; }
@@ -107,7 +112,8 @@ ul {
 #name {
   font-size: 2em;
   padding: 1em;
-  color: #B042BD; }
+  color: #B042BD;
+  margin: auto; }
 
 /* sections*/
 .page-section {
@@ -136,3 +142,7 @@ ul {
     height: 100vh; }
   #skills-list {
     font-size: 2.1em; } }
+
+@media only screen and (min-width: 700px) {
+  #hamburger-menu i {
+    display: none; } }
