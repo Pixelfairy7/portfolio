@@ -18,5 +18,11 @@ footer{
   
 }
  
- 
+ a{
+  &:hover {
+    color: $darkpink;
+    transform: scale(1.1);
+     
+    }
+ }
   

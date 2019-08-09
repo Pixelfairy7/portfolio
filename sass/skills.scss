@@ -1,0 +1,12 @@
+@import 'variables.scss';
+
+#skills-list{
+    display: flex; 
+    font-size: 5em;
+    list-style: none; 
+    justify-content: space-around;
+    flex-wrap: wrap;
+    li{
+        padding: .8em;
+    }
+}
