@@ -15,6 +15,20 @@ footer {
     color: #307F88;
     font-size: 2em; }
 
+a:hover {
+  color: #EB4E83;
+  transform: scale(1.1); }
+
+/* Variables */
+#skills-list {
+  display: flex;
+  font-size: 5em;
+  list-style: none;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  #skills-list li {
+    padding: .8em; }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -108,7 +122,7 @@ ul {
     color: #EB4E83; }
 
 /*Media Queries*/
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .navmenu {
     display: none; }
   h1 {
