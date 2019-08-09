@@ -132,4 +132,6 @@ ul {
   p {
     font-size: 1.5em; }
   .page-section {
-    height: 100vh; } }
+    height: 100vh; }
+  #skills-list {
+    font-size: 2em; } }
